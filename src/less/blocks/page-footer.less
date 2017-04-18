@@ -1,3 +1,29 @@
 .page-footer {
-  
+  padding: 25px 0;
+  flex-grow: 0;
+  background-color: #fefcf2;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  &__copyright,
+  &__contact {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  &__contact a {
+    position: relative;
+    padding-left: 55px;
+    color: @grey;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 34px;
+      height: 34px;
+      left: 4px;
+      top: 50%;
+      margin-top: -17px;
+      background: data-uri("../img/mail-icon.png") no-repeat;
+    }
+  }
 }
